@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ideAI</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 2em;">ideAI</h1>
+        <p>Transforming Educational Assessment with a Holistic and AI-infused Approach</p>
+    </header>
+
+    <div id="navbar-container"></div>
+
+    <section>
+        <h2>Our Products</h2>
+
+        <!-- APLUS Product Box -->
+        <div class="product-box" style="background-color: #00204e;">
+            <div class="product-content">
+                <h3>APLUS - Language Learning and Assessment Platform<br>University-Level</h3>
+                <p>APLUS is a language learning and assessment platform designed for University-level students. APLUS is meant to help students who may find that they need to improve their language competency to meet the increased demands that post-secondary education makes of them. APLUS also offers an immersive experience with timely feedback on their knowledge of academic integrity, oral, and written communication skills.</p>
+                <a href="https://aplusuoft.com/" class="cta-button" target="_blank">Visit APLUS</a>
+            </div>
+            <img src="/../media/aplus_logo.png" alt="APLUS Logo">
+        </div>
+
+        <div class="product-box" style="background-color: #264653;">
+            <div class="product-content">
+                <h3>BalanceAI - Holistic Assessment Platform<br>Grades 3 - 8</h3>
+                <p>BalanceAI is a holistic assessment platform designed to provide teachers, parents, and students with information on literacy, approach to learning, and cognitive functioning. Tailored for students in grades 3-8, BalanceAI enhances educational experiences by offering personalized insights.</p>
+                <a href="https://balanceai.ca/" class="cta-button" target="_blank">Visit BalanceAI</a>    
+            </div>
+            <img src="/../media/balanceai_logo.png" alt="BalanceAI Logo">
+
+        </div>
+
+        <div class="product-box" style="background-color: #2d348d;">
+            <div class=product-content>
+                <h3>BalanceAI Discovery - Interactive Literacy Assessment<br>Kindergarden to Grade 2</h3>
+                <p>BalanceAI Discovery is currently under development. Stay tuned for the upcoming release of this fun and interactive literacy assessment platform designed specifically for students in kindergarten through grade 2.</p>
+                <a href="https://discovery.balanceai.ca/" class="cta-button" target="_blank">Visit BalanceAI Discovery</a>
+            </div>
+            <img src="/../media/discovery_logo.png" alt="BalanceAI Discovery Logo">
+        </div>
+    </section>
+
+    <div class="bar" style="margin-top: 1px; height: 100px;"></div>
+
+    <script>
+        fetch('../components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching navigation bar:', error));
+    </script>
+
+
+</body>
+</html>

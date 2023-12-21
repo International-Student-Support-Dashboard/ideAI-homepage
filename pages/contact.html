@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ideAI</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 2em;">ideAI</h1>
+        <p>Transforming Educational Assessment with a Holistic and AI-infused Approach</p>
+    </header>
+
+    <div id="navbar-container"></div>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or interested in our services? Reach out to us!</p>
+        <p>Email: <a href="mailto:jangresearchlab@gmail.com" target="_blank">jangresearchlab@gmail.com</a></p>
+    </section>
+    <div class="bar" style="margin-top: 1px; height: 100px;"></div>
+
+    <script>
+        fetch('../components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching navigation bar:', error));
+    </script>
+
+
+</body>
+</html>
